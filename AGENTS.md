@@ -58,6 +58,10 @@ endings produce `git status` noise on Windows. `.gitattributes` enforces
 The output zip is `<name>_<version>.zip`. Changing a mod's `name` or `version`
 changes the artifact filename. Never hand-edit a zip in `dist/`; rebuild.
 
+Factorio also requires a mod's files to live inside a single top-level
+directory within the zip; `build.mjs` wraps them in `<name>/` automatically, so
+the zips are upload-ready as-is.
+
 ### 3. Each mod is sandboxed — no cross-mod require
 Factorio loads each mod in isolation. Shared code must be physically copied into
 the mod (the build does this) and `require`d relative to the mod root. Don't

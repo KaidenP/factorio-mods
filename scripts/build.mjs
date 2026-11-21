@@ -160,8 +160,11 @@ function stageMod(name) {
 // ---------------------------------------------------------------------------
 
 function packageMod({ name, info, staging }) {
+  // Factorio requires mod files to live inside a single top-level directory
+  // within the zip. The directory name is arbitrary; use the mod's internal
+  // name for consistency.
   const files = listFiles(staging).map((rel) => ({
-    name: rel,
+    name: `${info.name}/${rel}`,
     data: fs.readFileSync(path.join(staging, ...rel.split('/'))),
     mtime: fs.statSync(path.join(staging, ...rel.split('/'))).mtime,
   }));
