@@ -4,7 +4,7 @@
     "title": "Early Robots for 2.0",
     "author": "Dziebel 133 and BCC",
     "homepage": "https://github.com/KaidenP/factorio-mods",
-    "factorio_version": "2.0",
+    "factorio_version": "2.1",
     "dependencies": ["base >= 2.0"],
     "description": "This mod modifies the recipes and energy costs of utility robots to make them available in the early game and cheaper overall."
   }
