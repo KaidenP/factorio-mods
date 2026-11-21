@@ -1,0 +1,35 @@
+---------------------------------------------------------------------------------------------------
+Version: 1.0.4
+Date: 20/11/2024
+  Minor Features:
+    - Trash inventory slots are now the next multiple of 10 greater than the normal inventory size by default.
+    - Trash inventory can be configured to use the old 1.0.3 amount of slots, the new 1.0.4 version or that of the base game.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.3
+Date: 20/11/2024
+  Minor Features:
+    - Trash inventory now has the same amount of slots as the regular inventory.
+  Bugfixes:
+    - Fixed changelog date.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.2
+Date: 20/11/2024
+  Minor Features:
+    - Added a setting to change the storage size of logistic chests (default 59, base game 48)
+---------------------------------------------------------------------------------------------------
+Version: 1.0.1
+Date: 12/11/2024
+  Changes:
+    - First "Hotfix" patch since release.
+  Bugfixes:
+    - Fixed compatibility with AAI Containers & Warehouses.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+Date: 09/11/2024
+  Features:
+    - Updated to Factorio 2.0.
+    - Added Iron Stick recipe to the start of the game.
+    - Took ownership of the mod (Subject to change)
+    - Added Changelog.
+  Changes:
+    - Cleaned up code.
