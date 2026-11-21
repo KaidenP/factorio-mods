@@ -1,0 +1,16 @@
+{
+  "name": "factorio-mods",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Monorepo for developing Factorio mods",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "watch": "node scripts/build.mjs --watch",
+    "clean": "node scripts/build.mjs --clean",
+    "install-mods": "node scripts/build.mjs --install"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

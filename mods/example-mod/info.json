@@ -1,0 +1,11 @@
+{
+  "name": "example-mod",
+  "version": "0.1.0",
+  "title": "Example Mod",
+  "author": "KaidenP",
+  "contact": "",
+  "homepage": "",
+  "description": "A starter mod template for the factorio-mods monorepo.",
+  "factorio_version": "2.0",
+  "dependencies": ["base >= 2.0"]
+}

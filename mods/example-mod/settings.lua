@@ -1,0 +1,13 @@
+-- settings.lua — settings stage.
+-- Defines mod settings (startup, runtime-per-user, runtime-global) via
+-- data:extend({ ... }).
+
+-- Example:
+-- data:extend({
+--   {
+--     type = "bool-setting",
+--     name = "example-mod-enable",
+--     setting_type = "startup",
+--     default_value = true,
+--   },
+-- })

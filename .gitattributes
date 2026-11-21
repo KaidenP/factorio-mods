@@ -1,0 +1,19 @@
+# Enforce LF line endings for all text files. Factorio's Lua runtime chokes on
+# CRLF in some cases, and mixed endings create noisy `git status` output on
+# Windows checkouts. Never commit line-ending-only changes.
+* text=auto eol=lf
+
+# Explicitly binary (keeps git from trying to diff/merge them as text)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.bmp binary
+*.ogg binary
+*.wav binary
+*.zip binary
+*.ttf binary
+*.woff binary
+*.woff2 binary
+*.webm binary

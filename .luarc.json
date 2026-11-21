@@ -1,0 +1,28 @@
+{
+  "$schema": "https://raw.githubusercontent.com/LuaLS/lua-language-server/master/meta/method-schema.json",
+  "runtime": {
+    "version": "Lua 5.2",
+    "path": ["?.lua", "?/init.lua"]
+  },
+  "workspace": {
+    "checkThirdParty": false,
+    "library": [],
+    "ignoreDir": [".build", "dist", "node_modules"]
+  },
+  "diagnostics": {
+    "globals": [
+      "data",
+      "defines",
+      "game",
+      "script",
+      "remote",
+      "rendering",
+      "commands",
+      "rcon",
+      "log",
+      "serpent",
+      "mods",
+      "settings"
+    ]
+  }
+}
