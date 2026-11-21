@@ -23,7 +23,8 @@ const SHARED_DIR = path.join(ROOT, 'shared');
 const DIST_DIR = path.join(ROOT, 'dist');
 const STAGING_DIR = path.join(ROOT, '.build');
 
-const SKIP_NAMES = new Set(['build.json']);
+// Files that are repo/metadata artifacts, not part of the packaged mod.
+const SKIP_NAMES = new Set(['build.json', 'readme.md']);
 
 // ---------------------------------------------------------------------------
 // Small utilities
@@ -121,7 +122,8 @@ function stageMod(name) {
 
   // 1. Copy the mod's own files (everything except build config / dotfiles).
   for (const rel of listFiles(modSrc)) {
-    if (SKIP_NAMES.has(rel.split('/').pop()) || rel.startsWith('.')) {
+    const baseName = rel.split('/').pop().toLowerCase();
+    if (SKIP_NAMES.has(baseName) || rel.startsWith('.')) {
       continue;
     }
     const src = path.join(modSrc, ...rel.split('/'));

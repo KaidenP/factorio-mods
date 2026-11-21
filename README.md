@@ -13,6 +13,7 @@ factorio-mods/
 ├── mods/                    # one directory per mod
 │   └── example-mod/         #   a working starter mod (copy me)
 │       ├── info.json        #   required mod metadata
+│       ├── readme.md        #   mod portal "About" description
 │       ├── data.lua         #   data stage (prototypes)
 │       ├── control.lua      #   control stage (runtime)
 │       ├── settings.lua     #   mod settings
@@ -89,6 +90,7 @@ By default **all** of `shared/` is copied into every mod. To be selective, add a
 | `data-updates.lua` / `data-final-fixes.lua` | data | Late data-stage changes |
 | `control.lua` | runtime | Game logic and event handlers |
 | `locale/en/locale.cfg` | — | Human-readable names and descriptions |
+| `readme.md` | — | The mod portal "About" description (Markdown); not packaged into the zip |
 
 ## Commands
 

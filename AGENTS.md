@@ -37,6 +37,9 @@ Linux `~/.factorio/mods`). Override with `FACTORIO_MODS_DIR`.
 - `mods/<name>/build.json` — optional; `{ "shared": ["lib"] }` restricts which
   `shared/` subdirectories get copied into the mod at build time. Omit to copy
   all of `shared/`.
+- `mods/<name>/readme.md` — the Markdown "About" description submitted to the
+  Factorio mod portal. Kept in the repo for version control; **not** packaged
+  into the built zip (`build.mjs` skips it). Every mod has one.
 - `shared/` — Lua code shared across mods. Copied into each mod (as
   `shared/…`) at build time, then `require("shared.lib.foo")` from the mod.
 - `scripts/build.mjs` — orchestration (discover, stage, zip, install, watch).
@@ -73,3 +76,9 @@ for the mod to load.
 ### 6. Don't commit `dist/` or zips
 Build artifacts are gitignored. The repo is source only; CI (if added later)
 runs `npm run build`.
+
+### 7. `readme.md` vs `info.json` `description`
+`mods/<name>/readme.md` is the long Markdown "About" text for the mod portal.
+`info.json`'s `description` is the separate, short plain-text summary shown in
+the in-game mod manager. The build does not package `readme.md`; publish by
+copy-pasting its contents into the portal's description field.
