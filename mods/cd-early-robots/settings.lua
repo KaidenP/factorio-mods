@@ -2,7 +2,7 @@ data:extend{
     {   name = "er2_logistic-storage",
         type = "int-setting",
         setting_type = "startup",
-        default_value = 59,
+        default_value = 48,
         minimum_value = 1,
         maximum_value = 299,
         order = "a"

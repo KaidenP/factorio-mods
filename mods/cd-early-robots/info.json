@@ -1,8 +1,8 @@
 {
-    "name": "EarlyRobots2",
+    "name": "cd-early-robots",
     "version": "1.0.4",
-    "title": "Early Robots for 2.0",
-    "author": "Dziebel 133 and BCC",
+    "title": "Early Robots",
+    "author": "CraftingDoom",
     "homepage": "https://github.com/KaidenP/factorio-mods",
     "factorio_version": "2.1",
     "dependencies": ["base >= 2.0"],
