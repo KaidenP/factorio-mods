@@ -4,7 +4,7 @@
   "title": "Example Mod",
   "author": "KaidenP",
   "contact": "",
-  "homepage": "",
+  "homepage": "https://github.com/KaidenP/factorio-mods",
   "description": "A starter mod template for the factorio-mods monorepo.",
   "factorio_version": "2.0",
   "dependencies": ["base >= 2.0"]
